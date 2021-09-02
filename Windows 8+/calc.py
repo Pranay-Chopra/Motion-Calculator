@@ -6,13 +6,8 @@ import unit_convert_output as uco
 import ctypes
 import os
 
-
-
-if os.name == 'posix':
-    _ = os.system('clear')
-else:
-    _ = os.system('cls')
-    ctypes.windll.kernel32.SetConsoleTitleW("Motion Calculator")
+os.system('cls')
+ctypes.windll.kernel32.SetConsoleTitleW("Motion Calculator")
 
 
 print("\033[1;32;40m")
